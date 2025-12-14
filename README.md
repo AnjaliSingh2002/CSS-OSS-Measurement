@@ -211,19 +211,11 @@ Ensure:
 | scipy | Interpolation, Gaussian filtering, Sobel operator, Savitzky-Golay filter |
 | plotly | Interactive 3D visualization |
 
-### Algorithm Parameters
-
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| grid_res | 400 | DEM grid resolution |
-| sigma | 2 | Gaussian smoothing kernel size |
-| max_search_radius | 0.20m | Maximum mantle search distance |
-| num_samples | 200 | Points per ray for ray casting |
-| blend | 0.7 | Circle fit weight in final smoothing |
 
 ## Authors
 
 CSS/OSS Measurement Project Team
+Behlah Katleriwala, Anjali Singh, Mayank Mehan, Yaash Singh
 
 
 ## License
