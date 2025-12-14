@@ -214,7 +214,7 @@ Ensure:
 
 ## Authors
 
-CSS/OSS Measurement Project Team
+CSS/OSS Measurement Team Project: 
 Behlah Katleriwala, Anjali Singh, Mayank Mehan, Yaash Singh
 
 
