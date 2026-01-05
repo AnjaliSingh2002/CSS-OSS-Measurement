@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
 """
-Batch CSS/OSS Analyzer - Version 9 (Final)
+Batch CSS/OSS Analyzer 
 ==========================================
 
 This script processes multiple LiDAR CSV files to measure CSS and OSS values,
@@ -30,10 +29,14 @@ Algorithm:
     - Circle fitting + Savitzky-Golay smoothing
 
 Dependencies:
-    - pandas, numpy, scipy, plotly
+    - pandas
+    - numpy
+    - scipy
+    - plotly
+    - os
+    - sys
 
-Author: CSS/OSS Measurement Project Team
-Version: 9.0 (Batch Processing with Dashboard)
+Author: Behlah Katleriwala, Yassh Singh, Mayank Mehan, Anjali Singh
 """
 
 import pandas as pd
@@ -324,7 +327,7 @@ def create_visualization(filename, xi, yi, zi_smooth, peak_x, peak_y, peak_z,
 
 def process_csv_file(csv_path, verbose=False, generate_viz=True, output_dir="visualizations"):
     """
-    Process a single CSV file using the v9 algorithm.
+    Process a single CSV file using the algorithm.
     
     Implements the complete CSS/OSS measurement pipeline:
     1. Load and transform point cloud
@@ -1078,7 +1081,7 @@ def create_dashboard(results, output_dir="visualizations"):
 
 
 # =============================================================================
-# MAIN ENTRY POINT
+# MAIN FUNCTION
 # =============================================================================
 
 def main():
@@ -1087,13 +1090,13 @@ def main():
     
     Workflow:
     1. Find all Test*.csv files in current directory
-    2. Process each file using v9 algorithm
+    2. Process each file using algorithm
     3. Generate individual visualizations
     4. Create unified dashboard
     5. Export results to CSV
     """
     print("\n" + "="*70)
-    print(" BATCH CSS/OSS ANALYZER v9 - Absolute Height Wall Detection")
+    print(" BATCH CSS/OSS ANALYZER")
     print("="*70 + "\n")
     print(f"Wall Height Threshold: {WALL_HEIGHT_THRESHOLD}m ({WALL_HEIGHT_THRESHOLD*100:.0f}cm)\n")
     
